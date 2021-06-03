@@ -131,9 +131,15 @@ Ok, so that was a bit confusing, so lets try to simplify. Consider the following
 
 It will render the following result:
 
+![red square with smaller blue square in it](https://raw.githubusercontent.com/pedrotpo/frontendmentor-faq-accordion/main/screenshots/01.png "Initial Setup")
+
 In the squares above, the blue square is positioned in the vertical middle of the red square. So far nothing too complicated, right? So now lets turn the red square into a rectangle by increasing its height to `height: 200px`, and see what happens:
 
+![red rectangle with smaller blue square in its top half](https://raw.githubusercontent.com/pedrotpo/frontendmentor-faq-accordion/main/screenshots/02.png "Initial Setup")
+
 So the blue square mantains its position as intended, and the red square is now a rectangle. Neat. But what if we change the blue square to be positioned from `bottom` instead of `top`?
+
+![red rectangle with smaller blue square in its bottom half](https://raw.githubusercontent.com/pedrotpo/frontendmentor-faq-accordion/main/screenshots/03.png "Initial Setup")
 
 As expected, our blue square is at the bottom half of the red rectangle. Keep in mind that we could acheive the same result using `top: 125px`. Try it out for yourself and see that nothing changes on screen. 
 
