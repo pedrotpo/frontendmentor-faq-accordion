@@ -80,7 +80,7 @@ h1 {
     
     @media (min-width: 768px) {
         background-image: url("./images/illustration-woman-online-desktop.svg");
-        top: 290px;
+        bottom: -128px;
         left: 146px;
         height: 359px;
         width: 472px;
@@ -102,8 +102,8 @@ h1 {
         background-image: url("./images/bg-pattern-desktop.svg");
         height: 945px;
         width: 966px;
-        right: 550px;
-        top: -255px;
+        left: -100px;
+        bottom: -643px;
         clip-path: inset(255px 0 0 580px);
     }
 }
