@@ -6,7 +6,6 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -15,8 +14,6 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -28,89 +25,33 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Hide/Show the answer to a question when the question is clicked
 
-### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/pedrotpo/frontendmentor-faq-accordion)
+- Live Site URL: [GitHub Pages](https://pedrotpo.github.io/frontendmentor-faq-accordion/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- SASS
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Javascript
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Positioning, the bane of every frontend dev's existence. To be honest I thought the accordion would be the most troubling part, but it really wasn't - with just 27 lines of code I was able to make an accordion with animated transitions. However, positioning the SVG elements and clipping them was the real challenge here. In the end, all I can say is that CSS positioning is just one of thoses things I guess I'll never really understand (will anyone, really?), but I hope to one day get so used to doing it that it'll just work? 
 
 ### Useful resources
 
-- [Example resource 1](https://www.w3schools.com/howto/howto_js_accordion.asp) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://chuckdries.medium.com/traversing-the-dom-with-filter-map-and-arrow-functions-1417d326d2bc) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-https://www.w3schools.com/howto/howto_css_style_hr.asp
-
-https://www.w3schools.com/jsref/prop_node_childnodes.asp
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [W3Schools How To - Accordion](https://www.w3schools.com/howto/howto_js_accordion.asp) - Thank the gods for W3Schools. Their content is simple and straightfoward, and will usually provide you with a simple explanation for most of your doubts.
+- [Chuck Dries Medium article on how to use array methods on DOM array-like elements](https://chuckdries.medium.com/traversing-the-dom-with-filter-map-and-arrow-functions-1417d326d2bc) - So this is the article where I found out about the `Array.from()` method. Pretty good stuff.
+- [W3Schools How To - HR Styling](https://www.w3schools.com/howto/howto_css_style_hr.asp) - I know that styling a simple element such as a `hr` should be a no-brainer, but guess what, it wasn't. So again, thank you W3Schools!
+- [W3Schools Docs - childNodes](https://www.w3schools.com/jsref/prop_node_childnodes.asp) - It's always been a bit confusing to me this concept that DOM elements have an Array-like behavior, but are actually an Object of their own, so everytime I have to manipulate the DOM using vanilla JS, I have to refer back to some documentation. Althought the official doc is the MDN one, I sometimes find the W3Schools material to be less confusing and more straightfoward.
+- [Clippy - A clip-path calculator](https://bennettfeely.com/clippy/) - Hello `clip-path`, my new favorite tool for clipping images when nothing else seeems to work (I'm looking at you, `overflow: hidden`). This handy tool will calculate the apropriate `clip-path` for you, so it's a must-have.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@pedrotpo](https://www.frontendmentor.io/profile/pedrotpo)
