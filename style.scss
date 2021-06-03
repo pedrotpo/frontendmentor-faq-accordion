@@ -6,6 +6,11 @@ body {
     font-size: 12px;
     height: 100vh;
     margin: 0;
+    padding-top: 150px;
+
+    @media (min-width: 768px) {
+        padding-top: 130px;
+    }
 }
 
 hr {
@@ -39,24 +44,23 @@ h1 {
     position: relative;
     background: hsl(0, 0%, 100%);
     border-radius: 1rem;
-    margin: 148px auto 0;
+    margin: 0 auto;
     width: 327px;
     
     @media (min-width: 768px) {
         width: 920px;
         flex-flow: row-reverse nowrap;
-        margin: 0 auto;
     }
 }
 
 .box {
     display: none;
-    position: relative;
+    position: absolute;
     height: 184px;
     width: 191px;
     background-image: url("./images/illustration-box-desktop.svg");
-    top: 39%;
-    left: 11.5%;
+    top: 240px;
+    left: -93px;
     z-index: 3;
 
     @media (min-width: 768px) {
@@ -69,36 +73,38 @@ h1 {
     height: 196px;
     width: 266px;
     transform:translate(-50%,-50%);
-    position: fixed;
-    top: 15%;
-    left: 45%;
+    position: absolute;
+    bottom: 435px;
+    left: 150px;
     z-index: 2;
     
     @media (min-width: 768px) {
         background-image: url("./images/illustration-woman-online-desktop.svg");
-        top: 44%;
-        left: 28%;
+        top: 290px;
+        left: 146px;
         height: 359px;
         width: 472px;
-        clip-path: inset(0 0 0 19.5%);
+        clip-path: inset(0 0 0 90px);
     }
 }
 
 .shadow {
     background-image: url("./images/bg-pattern-mobile.svg");
-    position: fixed;
-    left: 16.5%;
+    position: absolute;
+    transform:translate(-50%,-50%);
     height: 104px;
     width: 240px;
+    left: 165px;
+    bottom: 470px;
     z-index: 1;
 
     @media (min-width: 768px) {
         background-image: url("./images/bg-pattern-desktop.svg");
         height: 945px;
         width: 966px;
-        left: -22.5%;
-        top: -10.5%;
-        clip-path: inset(30.6% 0 0 60%);
+        right: 550px;
+        top: -255px;
+        clip-path: inset(255px 0 0 580px);
     }
 }
 
@@ -149,4 +155,5 @@ h1 {
     margin-top: 15px;
     margin-bottom: 15px;
     transition: max-height 0.2s ease-in-out;
+    overflow: hidden;
 }

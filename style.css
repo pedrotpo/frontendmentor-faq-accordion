@@ -6,6 +6,13 @@ body {
   font-size: 12px;
   height: 100vh;
   margin: 0;
+  padding-top: 150px;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-top: 130px;
+  }
 }
 
 hr {
@@ -41,7 +48,7 @@ h1 {
   position: relative;
   background: white;
   border-radius: 1rem;
-  margin: 148px auto 0;
+  margin: 0 auto;
   width: 327px;
 }
 
@@ -52,18 +59,17 @@ h1 {
     -webkit-box-direction: reverse;
         -ms-flex-flow: row-reverse nowrap;
             flex-flow: row-reverse nowrap;
-    margin: 0 auto;
   }
 }
 
 .box {
   display: none;
-  position: relative;
+  position: absolute;
   height: 184px;
   width: 191px;
   background-image: url("./images/illustration-box-desktop.svg");
-  top: 39%;
-  left: 11.5%;
+  top: 240px;
+  left: -93px;
   z-index: 3;
 }
 
@@ -79,30 +85,33 @@ h1 {
   width: 266px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  position: fixed;
-  top: 15%;
-  left: 45%;
+  position: absolute;
+  bottom: 435px;
+  left: 150px;
   z-index: 2;
 }
 
 @media (min-width: 768px) {
   .logo {
     background-image: url("./images/illustration-woman-online-desktop.svg");
-    top: 44%;
-    left: 28%;
+    top: 290px;
+    left: 146px;
     height: 359px;
     width: 472px;
-    -webkit-clip-path: inset(0 0 0 19.5%);
-            clip-path: inset(0 0 0 19.5%);
+    -webkit-clip-path: inset(0 0 0 90px);
+            clip-path: inset(0 0 0 90px);
   }
 }
 
 .shadow {
   background-image: url("./images/bg-pattern-mobile.svg");
-  position: fixed;
-  left: 16.5%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   height: 104px;
   width: 240px;
+  left: 165px;
+  bottom: 470px;
   z-index: 1;
 }
 
@@ -111,10 +120,10 @@ h1 {
     background-image: url("./images/bg-pattern-desktop.svg");
     height: 945px;
     width: 966px;
-    left: -22.5%;
-    top: -10.5%;
-    -webkit-clip-path: inset(30.6% 0 0 60%);
-            clip-path: inset(30.6% 0 0 60%);
+    right: 550px;
+    top: -255px;
+    -webkit-clip-path: inset(255px 0 0 580px);
+            clip-path: inset(255px 0 0 580px);
   }
 }
 
@@ -176,5 +185,6 @@ h1 {
   margin-bottom: 15px;
   -webkit-transition: max-height 0.2s ease-in-out;
   transition: max-height 0.2s ease-in-out;
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
