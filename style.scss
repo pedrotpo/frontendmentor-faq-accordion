@@ -74,13 +74,13 @@ h1 {
     width: 266px;
     transform:translate(-50%,-50%);
     position: absolute;
-    bottom: 435px;
+    top: -8px;
     left: 150px;
     z-index: 2;
     
     @media (min-width: 768px) {
         background-image: url("./images/illustration-woman-online-desktop.svg");
-        bottom: -128px;
+        top: 295px;
         left: 146px;
         height: 359px;
         width: 472px;
@@ -95,7 +95,7 @@ h1 {
     height: 104px;
     width: 240px;
     left: 165px;
-    bottom: 470px;
+    top: 55px;
     z-index: 1;
 
     @media (min-width: 768px) {
@@ -103,7 +103,7 @@ h1 {
         height: 945px;
         width: 966px;
         left: -100px;
-        bottom: -643px;
+        top: 218px;
         clip-path: inset(255px 0 0 580px);
     }
 }
