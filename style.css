@@ -174,7 +174,6 @@ h1 {
   max-height: 0;
   margin-top: 15px;
   margin-bottom: 15px;
-  overflow: hidden;
   -webkit-transition: max-height 0.2s ease-in-out;
   transition: max-height 0.2s ease-in-out;
 }
