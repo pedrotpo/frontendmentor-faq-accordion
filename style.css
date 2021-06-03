@@ -13,8 +13,10 @@ hr {
 }
 
 h1 {
-  text-align: center;
+  color: #4a4b5e;
   margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .attribution {
@@ -59,7 +61,14 @@ h1 {
   background: none;
   border: none;
   padding: 0;
-  height: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #4a4b5e;
+}
+
+.toggle.active {
+  font-weight: 700;
+  color: #1d1e35;
 }
 
 .toggle div {
@@ -74,6 +83,10 @@ h1 {
           align-items: center;
 }
 
+.toggle:hover {
+  color: #f47c57;
+}
+
 .icon {
   height: 7px;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
@@ -83,7 +96,10 @@ h1 {
 }
 
 .panel {
+  color: #787887;
   max-height: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-in-out;
   transition: max-height 0.2s ease-in-out;

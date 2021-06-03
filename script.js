@@ -6,11 +6,18 @@ toggle.map((i) => {
   const icon = i.childNodes[1].childNodes[1];
 
   i.addEventListener("click", function (event) {
+    if (this.classList.contains("active")){
+      this.classList.remove("active");
+    } else {
+      this.classList.add("active");
+    }
+    
     if (icon.style.transform === "rotate(180deg)"){
       icon.style.transform="rotate(0deg)";
     } else {
       icon.style.transform="rotate(180deg)";
     }
+
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
